@@ -10,7 +10,7 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 
 const store = createStore(reducer, {}, composeWithDevTools(applyMiddleware(thunk)));
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <Provider store={store}>
         <App />
